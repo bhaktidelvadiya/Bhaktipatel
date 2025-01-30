@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Farmer Market Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            background: white;
+            text-align: center;
+            display: inline-block;
+            width: calc(33% - 40px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            color: #555;
+        }
+        .product button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #45a049;
+        }
+        .contact-form {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Local Farmer Market Hub</h1>
+    <p>Connecting Farmers with Local Communities for Fresh Produce and Handmade Goods</p>
+</header>
+
+<div class="container">
+    <h2>Fresh Produce</h2>
+    <div class="product">
+        <img src="images/tomatoes.jpg" alt="Fresh Tomatoes">
+        <h3>Fresh Tomatoes</h3>
+        <p>Price: Rs 30 per kg</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/carrots.jpg" alt="Organic Carrots">
+        <h3>Organic Carrots</h3>
+        <p>Price: Rs 30 per Kg</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/lettuce.jpg" alt="Crisp Lettuce">
+        <h3>Crisp Lettuce</h3>
+        <p>Price: Rs 40 kg</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <h2>Handmade Goods</h2>
+    <div class="product">
+        <img src="images/jam.jpg" alt="Homemade Jam">
+        <h3>Homemade Jam</h3>
+        <p>Price: Rs 50 per jar</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/soap.jpg" alt="Natural Soap">
+        <h 3>Natural Soap</h3>
+        <p>Price: Rs 40 each</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/candles.jpg" alt="Handmade Candles">
+        <h3>Handmade Candles</h3>
+        <p>Price: Rs 60 each</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Local Farmer Market Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
