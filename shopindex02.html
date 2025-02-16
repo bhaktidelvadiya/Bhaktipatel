@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Farmer Market Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Local Farmer Market Hub</h1>
+    <p>Connecting Farmers with Local Communities for Fresh Produce and Handmade Goods</p>
+</header>
+
+<div class="container">
+    <h2>Fresh Produce</h2>
+    <div class="product">
+        <img src="images/tomatoes.jpg" alt="Fresh Tomatoes">
+        <h3>Fresh Tomatoes</h3>
+        <p>Price: Rs 30 per kg</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/carrots.jpg" alt="Organic Carrots">
+        <h3>Organic Carrots</h3>
+        <p>Price: Rs 30 per Kg</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/lettuce.jpg" alt="Crisp Lettuce">
+        <h3>Crisp Lettuce</h3>
+        <p>Price: Rs 40 kg</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <h2>Handmade Goods</h2>
+    <div class="product">
+        <img src="images/jam.jpg" alt="Homemade Jam">
+        <h3>Homemade Jam</h3>
+        <p>Price: Rs 50 per jar</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/soap.jpg" alt="Natural Soap">
+        <h3>Natural Soap</h3>
+        <p>Price: Rs 40 each</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/candles.jpg" alt="Handmade Candles">
+        <h3>Handmade Candles</h3>
+        <p>Price: Rs 60 each</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Local Farmer Market Hub. All rights reserved .</p>
+</footer>
+
+</body>
+</html>
